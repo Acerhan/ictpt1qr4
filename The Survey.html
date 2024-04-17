@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title> The Survey </title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body><h1>SURVEY</h1>
+    <form>
+        Full name: <input type="text" id="ss"><br>
+        Section: <input type="text" id="mm"><br>
+        Bakit importante lambingin ang iyong BooBoo Bear?
+        <select id="jj">
+            <option> Para siya ay magalit</option>
+            <option> Para sumaya siya at mahalin din ako</option>
+        <option> Tinatanong paba yan </option>
+        </select>
+        <br>
+        Mag bigay ng callsign na cute <input type="text" id="kk"> <br>
+        Ano ang dapat ibigay tuwing Anniversary niyo ng iyong BooBoo Bear?
+        <select id="hh">
+            <option>Bat ako magreregalo?</option>
+            <option>Siyempre Flowers at Chocolates</option>
+            <option> Sama ng Loob</option>
+        </select>
+        <br>
+        Kanino dapat makinig? kay BooBoo Bear o kay GBF/BBF?
+        <select id="ff">
+            <option>BooBoo Bear</option>
+            <option>GBF/BBF</option>
+        </select>
+        <br>
+        Mag bigay ng Holiday <input type="text" id="nn"><br>
+        Current status? <input type="text" id="bb"><br>
+        Gusto moba magkaroon ng BooBoo Bear?
+        <select id="yy">
+            <option>No</option>
+            <option>Yes na Yes</option>
+        </select>
+        <br>
+        Bago matapos ang lahat, naniniwala kaba sa fall out of love?
+        <select id="qq"> 
+            <option> eh kung umiyak ako ngayon</option>
+            <option> oo naman, depende sa circumstances</option>
+        </select>
+        <br>
+        <input type="submit" value="submit" onclick="baby()"> </form>
+        <h2> Thank you sa pagsagot eyy</h2>
+<script>
+    function baby(){
+        var d = document.getElementById("ss").value;
+        var a = document.getElementById("mm").value;
+        var n = document.getElementById("jj").value;
+        var i = document.getElementById("kk").value;
+        var l = document.getElementById("hh").value;
+        var o = document.getElementById("ff").value;
+        var li = document.getElementById("nn").value;
+        var oo = document.getElementById("bb").value;
+        var jf = document.getElementById("yy").value;
+        var kf = document.getElementById("qq").value;
+
+        var ah = localStorage.setItem("ss", d);
+        var eh = localStorage.setItem("mm", a);
+        var ih = localStorage.setItem("jj", n);
+        var hk = localStorage.setItem("kk", i);
+        var js = localStorage.setItem("hh", l);
+        var bs = localStorage.setItem("ff", o);
+        var kp = localStorage.setItem("nn", li);
+        var we = localStorage.setItem("bb", oo);
+        var nm = localStorage.setItem("yy", jf);
+        var cs = localStorage.setItem("qq", kf);
+    }
+    
+
+</script>
+       </body>
+       </html>
